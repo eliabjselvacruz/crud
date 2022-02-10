@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/pulse/bootstrap.min.css" integrity="sha384-L7+YG8QLqGvxQGffJ6utDKFwmGwtLcCjtwvonVZR/Ba2VzhpMwBz51GaXnUsuYbj" crossorigin="anonymous">
+  <title>CRUD</title>
+</head>
+<body>
+  
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <form id="task-form">
+              <div class="form-group">
+                <input autofocus type="text" id="task-title" class="form-control" placeholder="Titulo tarea">
+              </div>
+              <div class="form-group">
+                <textarea id="task-description" class="form-control" placeholder="Descrición tarea" rows="3"></textarea>
+              </div>
+              <button class="btn btn-primary" id="btn-task-form">Guardar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div id="tasks-container">
+
+    </div>
+  </div>
+  <script type="module" src="./js/firebase.js"></script>
+  <script type="module" src="./js/index.js"></script>
+</body>
+</html>
